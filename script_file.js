@@ -16,7 +16,12 @@ async function runScript() {
     const cmdDownload = `gsutil -m cp -r ${gcsBucket}/${file} ./`;
     const { stdout, stderr } = await exec(cmdDownload);
     console.log('cmdDownload', stdout, stderr);
-    const cmdUpload = `aws s3 --endpoint=${s3Endpoint} cp ./${file} ${s3Bucket}/${file}`;
+    let cmdUpload = `aws s3 --endpoint=${s3Endpoint} cp ./${file} ${s3Bucket}/${file}`;
+    if (file.includes('/')) {
+      const fileNames = file.split('/');
+      const fileName = fileNames[fileNames.length - 1];
+      cmdUpload = `aws s3 --endpoint=${s3Endpoint} cp ./${fileName} ${s3Bucket}/${file}`;
+    }
     const { stdout: uploadStout, stderr: uploadStderr } = await exec(cmdUpload);
     console.log('cmdUpload', uploadStout, uploadStderr);
     const cmdRemove = `rm -rf ${file}`;
