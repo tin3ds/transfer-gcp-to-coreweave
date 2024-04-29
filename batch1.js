@@ -1,8 +1,7 @@
 module.exports = [
-  '0.dedicatedServers',
-  '0.patches',
-  '000',
-  '1213Srka',
-  '3DArcDesign',
-  '3DHomeMedia',
+  '3DStephen',
+  '3DVisual',
+  '3DrelmDesigns',
+  '3daki',
+  '3dus',
 ]

@@ -10,6 +10,9 @@ const s3Bucket = 's3://demo-gcp-coreweave';
 async function runScript() {
   for (const folder of batch) {
     console.log(`Processing ${folder}`)
+    const cmdInfo = `gsutil du -s -ch gs://e3ds-master.appspot.com/${folder}`;
+    const { stdout: infostdout, stderr: infostderr } = await exec(cmdInfo);
+    console.log('cmdDownload', infostdout, infostderr);
     const cmdDownload = `gsutil -m cp -r ${gcsBucket}/${folder} ./`;
     const { stdout, stderr } = await exec(cmdDownload);
     console.log('cmdDownload', stdout, stderr);
