@@ -15,13 +15,23 @@ async function runScript() {
       const cmdInfo = `gsutil du -s -ch gs://e3ds-master.appspot.com/${folder}`;
       const { stdout: infostdout, stderr: infostderr } = await exec(cmdInfo);
       console.log("cmdInfo", infostdout, infostderr);
-      const cmdDownload = `gsutil -m cp -r ${gcsBucket}/${folder} ./`;
+
+      let cmdDownload = `gsutil -m cp -r ${gcsBucket}/${folder} ./`;
+      if (folder.includes('/')) {
+        cmdDownload = `gsutil -m cp -r ${gcsBucket}/${folder} ./${folder}`;
+      }
+
       const { stdout, stderr } = await exec(cmdDownload);
       console.log("cmdDownload", stdout, stderr);
       const cmdUpload = `aws s3 --endpoint=${s3Endpoint} cp --recursive ./${folder}/ ${s3Bucket}/${folder}/`;
       const { stdout: uploadStout, stderr: uploadStderr } = await exec(cmdUpload);
       console.log("cmdUpload", uploadStout, uploadStderr);
-      const cmdRemove = `rm -rf ${folder}`;
+
+      let cmdRemove = `rm -rf ${folder}`;
+      if (folder.includes('/')) {
+        const firstfolder = folder.split('/')[0];
+        cmdRemove = `rm -rf ${firstfolder}`;
+      }
       await exec(cmdRemove);
       await fs.appendFile("./done.txt", `${folder} \n`);
       console.log(`Done ${folder}`);
