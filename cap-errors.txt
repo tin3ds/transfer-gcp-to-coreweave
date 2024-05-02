@@ -1,0 +1,3 @@
+error: Mykola EagleNewTest1 Command failed: gsutil du -s gs://e3ds-master.appspot.com/Mykola EagleNewTest1
+CommandException: "du" command does not support "file://" URLs. Did you mean to use a gs:// URL?
+
