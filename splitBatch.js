@@ -25,10 +25,8 @@ async function runScript() {
       totalSize = BigInt(totalSize) + BigInt(itemSize);
 
       if (totalSize < maxSize) {
-        bathResult.push(item)
+        bathResult.push(item[0])
       } else {
-
-        bathResult = [['total', totalSize.toString()], ...bathResult]
 
         await fs.writeFile(`./batch-${bathCount}.json`, JSON.stringify(bathResult));
 
@@ -40,7 +38,6 @@ async function runScript() {
     }
   }
 
-  bathResult = [['total', totalSize.toString()], ...bathResult]
   await fs.writeFile(`./batch-${bathCount}.json`, JSON.stringify(bathResult));
 }
 
