@@ -1,0 +1,5 @@
+1/ Collect all user folders and size of them - 2hrs
+2/ Order by size and split batches - 5mins
+3/ Prepare machines and put batch to machine
+4/ Create and update correct Coreweave bucket into the script_folder.js (e3ds-streaming-app)
+5/ Run script_folder.js to transfer

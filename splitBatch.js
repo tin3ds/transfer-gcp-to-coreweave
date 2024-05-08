@@ -4,7 +4,7 @@ const capArr = require('./cap.json');
 async function runScript() {
   let bathCount = 1;
   let totalSize = BigInt(0);
-  let maxSize = BigInt(1400000000000); // 1 TB
+  let maxSize = BigInt(1000000000000); // 1 TB
   let bathResult = [];
 
   const cloneCapArr = capArr;
@@ -33,7 +33,7 @@ async function runScript() {
         bathCount += 1;
         bathResult = [];
         totalSize = 0;
-        bathResult.push(item);
+        bathResult.push(item[0]);
       }
     }
   }
