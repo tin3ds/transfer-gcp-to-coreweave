@@ -6,7 +6,7 @@ const batch = require("./batch-1.json");
 
 const gcsBucket = "gs://e3ds-master.appspot.com";
 const s3Endpoint = "https://object.ord1.coreweave.com";
-const s3Bucket = "s3://demo-gcp-coreweave";
+const s3Bucket = "s3://e3ds-streaming-app";
 
 async function runScript() {
   for (const folder of batch) {
