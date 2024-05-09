@@ -1,0 +1,40 @@
+APP error: gs://e3ds-master.appspot.com/imerza/Forsythia/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/imerza/Forte/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/imerza/GardenaClaremont/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/imerza/LasOlas/ Command failed: gsutil -m cp -r gs://e3ds-master.appspot.com/imerza/LasOlas/ ./imerza/
+Copying gs://e3ds-master.appspot.com/imerza/LasOlas/3.zip...
+Copying gs://e3ds-master.appspot.com/imerza/LasOlas/4.zip...
+/ [0/8 files][    0.0 B/118.8 GiB]   0% Done                                    / [0/8 files][    0.0 B/118.8 GiB]   0% Done                                    Copying gs://e3ds-master.appspot.com/imerza/LasOlas/2.zip...
+Copying gs://e3ds-master.appspot.com/imerza/LasOlas/7.zip...
+/ [0/8 files][    0.0 B/118.8 GiB]   0% Done                                    / [0/8 files][    0.0 B/118.8 GiB]   0% Done                                    Copying gs://e3ds-master.appspot.com/imerza/LasOlas/5.zip...
+/ [0/8 files][    0.0 B/118.8 GiB]   0% Done                                    Copying gs://e3ds-master.appspot.com/imerza/LasOlas/6.zip...
+/ [0/8 files][    0.0 B/118.8 GiB]   0% Done                                    Copying gs://e3ds-master.appspot.com/imerza/LasOlas/1.zip...
+Copying gs://e3ds-master.appspot.com/imerza/LasOlas/8.zip...
+/ [0/8 files][    0.0 B/118.8 GiB]   0% Done                                    / [0/8 files][    0.0 B/118.8 GiB]   0% Done                                    [Errno 28] No space left on device
+[Errno 28] No space left on device
+[Errno 28] No space left on device
+[Errno 28] No space left on device
+[Errno 28] No space left on device
+[Errno 28] No space left on device
+[Errno 28] No space left on device
+[Errno 28] No space left on device
+CommandException: 8 files/objects could not be transferred.
+
+APP error: gs://e3ds-master.appspot.com/imerza/ManningRd/ Command failed: gsutil -m cp -r gs://e3ds-master.appspot.com/imerza/ManningRd/ ./imerza/
+Copying gs://e3ds-master.appspot.com/imerza/ManningRd/1.zip...
+/ [0/1 files][    0.0 B/  5.7 GiB]   0% Done                                    [Errno 28] No space left on device
+CommandException: 1 file/object could not be transferred.
+
+APP error: gs://e3ds-master.appspot.com/imerza/MarinaPointe/ Command failed: gsutil -m cp -r gs://e3ds-master.appspot.com/imerza/MarinaPointe/ ./imerza/
+Copying gs://e3ds-master.appspot.com/imerza/MarinaPointe/1.zip...
+Copying gs://e3ds-master.appspot.com/imerza/MarinaPointe/2.zip...
+/ [0/2 files][    0.0 B/  7.5 GiB]   0% Done                                    / [0/2 files][    0.0 B/  7.5 GiB]   0% Done                                    [Errno 28] No space left on device
+[Errno 28] No space left on device
+CommandException: 2 files/objects could not be transferred.
+
+APP error: gs://e3ds-master.appspot.com/imerza/Nivalia/ Command failed: gsutil -m cp -r gs://e3ds-master.appspot.com/imerza/Nivalia/ ./imerza/
+Copying gs://e3ds-master.appspot.com/imerza/Nivalia/1.zip...
+/ [0/1 files][    0.0 B/  9.5 GiB]   0% Done                                    CommandException: Couldn't write tracker file (C:\Users\e3ds\.gsutil\tracker-files\sliced_download_TRACKER_953e168138941c80e347e7434e06ae75e02d6b9b.1.zip__JSON.etag): No space left on device. This can happen if gsutil is configured to save tracker files to an unwritable directory)
+CommandException: 1 file/object could not be transferred.
+
+USER error: imerza ENOSPC: no space left on device, write
