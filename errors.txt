@@ -1,0 +1,3 @@
+APP error: gs://e3ds-master.appspot.com/sheglov/Interactive appartment/ Command failed: gsutil du -s -ch gs://e3ds-master.appspot.com/sheglov/Interactive appartment/
+CommandException: "du" command does not support "file://" URLs. Did you mean to use a gs:// URL?
+
