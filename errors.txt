@@ -1,4 +1,9 @@
-APP error: gs://e3ds-master.appspot.com/doll/083057_logo/ infostdout is not defined
-APP error: gs://e3ds-master.appspot.com/doll/Lucia_V04/ infostdout is not defined
-APP error: gs://e3ds-master.appspot.com/doll/TrainingCenter/ infostdout is not defined
-APP error: gs://e3ds-master.appspot.com/Footprint/Gallery_01/ infostdout is not defined
+APP error: gs://e3ds-master.appspot.com/imerza/900Naples_5thAve/4.zip Command failed: gsutil -m cp -r gs://e3ds-master.appspot.com/imerza/900Naples_5thAve/4.zip ./imerza/900Naples_5thAve/
+Copying gs://e3ds-master.appspot.com/imerza/900Naples_5thAve/4.zip...
+Skipping attempt to download to filename ending with slash
+(./imerza/900Naples_5thAve/). This typically happens when using gsutil
+to download from a subdirectory created by the Cloud Console
+(https://cloud.google.com/console)
+InvalidUrlError: Invalid destination path: ./imerza/900Naples_5thAve/
+/ [0/1 files][    0.0 B/ 31.2 GiB]   0% Done                                    CommandException: 1 file/object could not be transferred.
+

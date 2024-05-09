@@ -52,6 +52,9 @@ async function runScript() {
   console.log('==============================================');
   console.log('INCOMPLETED')
   console.log(inCompleted);
+
+  await fs.writeFile("./incompleted.json", JSON.stringify(inCompleted));
+  await fs.writeFile("./completed.json", JSON.stringify(completed));
 }
 
 runScript();

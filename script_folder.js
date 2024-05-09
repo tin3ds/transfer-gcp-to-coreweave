@@ -2,7 +2,7 @@ const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 const fs = require("node:fs/promises");
 
-const batch = require("./batchdemo");
+const batch = require("./batch-imerza-child.json");
 
 const gcsBucket = "gs://e3ds-master.appspot.com";
 const s3Endpoint = "https://object.ord1.coreweave.com";
@@ -40,7 +40,7 @@ async function runScript() {
             console.log("cmdDownload", stdout, stderr);
 
             const cmdUpload = `aws s3 --endpoint=${s3Endpoint} cp --recursive ./${folder}/${childFolderName}/ ${s3Bucket}/${folder}/${childFolderName}/`;
-            const { stdout: uploadStout, stderr: uploadStderr } = await exec(cmdUpload, { maxBuffer: 1024 * 4000 });
+            const { stdout: uploadStout, stderr: uploadStderr } = await exec(cmdUpload, { maxBuffer: 1024 * 8000 });
             console.log("cmdUpload", uploadStout, uploadStderr);
 
             const childRemove = `rm -rf ./${folder}/${childFolderName}`;
