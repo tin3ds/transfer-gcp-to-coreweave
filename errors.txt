@@ -1,0 +1,37 @@
+APP error: gs://e3ds-master.appspot.com/TaeWoo/Das/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/Teriander/Portfolio/ stdout maxBuffer length exceeded
+USER error: Teriander Command failed: rm -rf Teriander
+rm: cannot remove 'Teriander/Portfolio/5.zip': Device or resource busy
+
+APP error: gs://e3ds-master.appspot.com/Mr_Csihar/Pershing_30/ stdout maxBuffer length exceeded
+USER error: Mr_Csihar Command failed: rm -rf Mr_Csihar
+rm: cannot remove 'Mr_Csihar/Pershing_30/1.zip': Device or resource busy
+
+APP error: gs://e3ds-master.appspot.com/cestruch/CoopersCross/ stdout maxBuffer length exceeded
+USER error: cestruch Command failed: rm -rf cestruch
+rm: cannot remove 'cestruch/CoopersCross/1.zip': Device or resource busy
+rm: cannot remove 'cestruch/CoopersCross/2.zip': Device or resource busy
+rm: cannot remove 'cestruch/CoopersCross/3.zip': Device or resource busy
+
+APP error: gs://e3ds-master.appspot.com/sonytokyo/WDBE2020/ stdout maxBuffer length exceeded
+USER error: sonytokyo Command failed: rm -rf sonytokyo
+rm: cannot remove 'sonytokyo/WDBE2020/1.zip': Device or resource busy
+rm: cannot remove 'sonytokyo/WDBE2020/2.zip': Device or resource busy
+rm: cannot remove 'sonytokyo/WDBE2020/3.zip': Device or resource busy
+rm: cannot remove 'sonytokyo/WDBE2020/4.zip': Device or resource busy
+
+APP error: gs://e3ds-master.appspot.com/Dvan/Scala_Havalook/ stdout maxBuffer length exceeded
+USER error: Dvan Command failed: rm -rf Dvan
+rm: cannot remove 'Dvan/Scala_Havalook/1.zip': Device or resource busy
+rm: cannot remove 'Dvan/Scala_Havalook/10.zip': Device or resource busy
+rm: cannot remove 'Dvan/Scala_Havalook/11.zip': Device or resource busy
+rm: cannot remove 'Dvan/Scala_Havalook/13.zip': Device or resource busy
+rm: cannot remove 'Dvan/Scala_Havalook/14.zip': Device or resource busy
+
+APP error: gs://e3ds-master.appspot.com/epicaws/WDBE2020/ stdout maxBuffer length exceeded
+USER error: epicaws Command failed: rm -rf epicaws
+rm: cannot remove 'epicaws/WDBE2020/1.zip': Device or resource busy
+rm: cannot remove 'epicaws/WDBE2020/2.zip': Device or resource busy
+rm: cannot remove 'epicaws/WDBE2020/3.zip': Device or resource busy
+rm: cannot remove 'epicaws/WDBE2020/4.zip': Device or resource busy
+
