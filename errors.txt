@@ -1,0 +1,4 @@
+APP error: gs://e3ds-master.appspot.com/doll/083057_logo/ infostdout is not defined
+APP error: gs://e3ds-master.appspot.com/doll/Lucia_V04/ infostdout is not defined
+APP error: gs://e3ds-master.appspot.com/doll/TrainingCenter/ infostdout is not defined
+APP error: gs://e3ds-master.appspot.com/Footprint/Gallery_01/ infostdout is not defined
