@@ -1,0 +1,23 @@
+APP error: gs://e3ds-master.appspot.com/damos-theia/TheiaVP_Prod/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/damos-theia/TheiaVP_Stable/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/damos-theia/Toll Brother Edge Test/ Command failed: gsutil du -s -ch gs://e3ds-master.appspot.com/damos-theia/Toll Brother Edge Test/
+CommandException: "du" command does not support "file://" URLs. Did you mean to use a gs:// URL?
+
+USER error: damos-theia Command failed: rm -rf damos-theia
+rm: cannot remove 'damos-theia/TheiaVP_Prod/5.zip': Device or resource busy
+rm: cannot remove 'damos-theia/TheiaVP_Prod/6.zip': Device or resource busy
+rm: cannot remove 'damos-theia/TheiaVP_Prod/7.zip': Device or resource busy
+rm: cannot remove 'damos-theia/TheiaVP_Prod/8.zip': Device or resource busy
+rm: cannot remove 'damos-theia/TheiaVP_Prod/9.zip': Device or resource busy
+
+APP error: gs://e3ds-master.appspot.com/demo/ 0 B folder
+APP error: gs://e3ds-master.appspot.com/demo/LidarData.laz Is valid not folder
+APP error: gs://e3ds-master.appspot.com/demo/083057_BGI/ 0 B folder
+APP error: gs://e3ds-master.appspot.com/demo/083057_assets/ 0 B folder
+APP error: gs://e3ds-master.appspot.com/demo/083057_logo/ 0 B folder
+APP error: gs://e3ds-master.appspot.com/demo/HKS2/ 0 B folder
+APP error: gs://e3ds-master.appspot.com/demo/New App/ Command failed: gsutil du -s -ch gs://e3ds-master.appspot.com/demo/New App/
+CommandException: "du" command does not support "file://" URLs. Did you mean to use a gs:// URL?
+
+APP error: gs://e3ds-master.appspot.com/demo/Robin/ 0 B folder
+APP error: gs://e3ds-master.appspot.com/demo/VirtualStudio/ stdout maxBuffer length exceeded
