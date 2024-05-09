@@ -1,0 +1,38 @@
+APP error: gs://e3ds-master.appspot.com/Footprint/Gallery_01/ stdout maxBuffer length exceeded
+USER error: Footprint Command failed: rm -rf Footprint
+rm: cannot remove 'Footprint/Gallery_01/1.zip': Device or resource busy
+rm: cannot remove 'Footprint/Gallery_01/2.zip': Device or resource busy
+rm: cannot remove 'Footprint/Gallery_01/3.zip': Device or resource busy
+rm: cannot remove 'Footprint/Gallery_01/4.zip': Device or resource busy
+rm: cannot remove 'Footprint/Gallery_01/5.zip': Device or resource busy
+
+APP error: gs://e3ds-master.appspot.com/egu/InGameConfigV4/ stdout maxBuffer length exceeded
+USER error: egu Command failed: rm -rf egu
+rm: cannot remove 'egu/InGameConfigV4/1.zip': Device or resource busy
+rm: cannot remove 'egu/InGameConfigV4/2.zip': Device or resource busy
+rm: cannot remove 'egu/InGameConfigV4/3.zip': Device or resource busy
+rm: cannot remove 'egu/InGameConfigV4/4.zip': Device or resource busy
+
+APP error: gs://e3ds-master.appspot.com/ColeRobAECOM/LA28_Summer_Olympics/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/Tridonic/CoreTridonic/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/Tridonic/LightingPlayground/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/stageglass/DEV_AKSHAY/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/stageglass/DEV_COLIN_2/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/jcl/Nexthub/ stdout maxBuffer length exceeded
+USER error: jcl Command failed: rm -rf jcl
+rm: cannot remove 'jcl/Nexthub/29.zip': Device or resource busy
+rm: cannot remove 'jcl/Nexthub/30.zip': Device or resource busy
+rm: cannot remove 'jcl/Nexthub/31.zip': Device or resource busy
+rm: cannot remove 'jcl/Nexthub/32.zip': Device or resource busy
+rm: cannot remove 'jcl/Nexthub/33.zip': Device or resource busy
+
+APP error: gs://e3ds-master.appspot.com/Lunas/Niles/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/futureact/CoreTridonic/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/futureact/LightingPlayground/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/futureact/Sparkasse/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/oglengineering/IRIS_DinoPark_Demo/ stdout maxBuffer length exceeded
+APP error: gs://e3ds-master.appspot.com/oglengineering/IRIS_NHC_UE5_Build/ stdout maxBuffer length exceeded
+USER error: oglengineering Command failed: rm -rf oglengineering
+rm: cannot remove 'oglengineering/IRIS_NHC_UE5_Build/1.zip': Device or resource busy
+
+APP error: gs://e3ds-master.appspot.com/invidar/Milwaukee_World_V2/ stdout maxBuffer length exceeded

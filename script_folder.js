@@ -1,8 +1,7 @@
 const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 const fs = require("node:fs/promises");
-
-const batch = require("./batch-1.json");
+const batch = require("./batch-4.json");
 
 const gcsBucket = "gs://e3ds-master.appspot.com";
 const s3Endpoint = "https://object.ord1.coreweave.com";
@@ -39,11 +38,11 @@ async function runScript() {
             console.log("cmdDownload", stdout, stderr);
 
             const cmdUpload = `aws s3 --endpoint=${s3Endpoint} cp --recursive ./${folder}/${childFolderName}/ ${s3Bucket}/${folder}/${childFolderName}/`;
-            const { stdout: uploadStout, stderr: uploadStderr } = await exec(cmdUpload);
+            const { stdout: uploadStout, stderr: uploadStderr } = await exec(cmdUpload, { maxBuffer: 1024 * 4000 } );
             console.log("cmdUpload", uploadStout, uploadStderr);
 
             const childRemove = `rm -rf ./${folder}/${childFolderName}`;
-            await exec(childRemove);
+            await exec(childRemove, { maxBuffer: 1024 * 4000 });
 
             await fs.appendFile("./done-app-names.txt", `${folder}/${childFolderName} \n`);
             console.log(`Done ${folder}/${childFolderName}`);
