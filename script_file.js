@@ -2,7 +2,7 @@ const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 const fs = require("node:fs/promises");
 
-const fileBatch = require("./all-imerza-file.json");
+const fileBatch = require("./all-dedicated-file.json");
 
 const gcsBucket = "gs://e3ds-master.appspot.com";
 const s3Endpoint = "https://object.ord1.coreweave.com";
