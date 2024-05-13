@@ -2,7 +2,7 @@ const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 const fs = require("node:fs/promises");
 
-const batch = require("./batch-imerza-child.json");
+const batch = require("./incomplete-cp.json");
 
 const gcsBucket = "gs://e3ds-master.appspot.com";
 const s3Endpoint = "https://object.ord1.coreweave.com";
@@ -65,7 +65,7 @@ async function runScript() {
         const firstfolder = folder.split('/')[0];
         cmdRemove = `rm -rf ${firstfolder}`;
       }
-      await exec(cmdRemove);
+      await exec(cmdRemove, { maxBuffer: 1024 * 4000 });
       await fs.appendFile("./done.txt", `${folder} \n`);
       console.log(`Done ${folder}`);
       console.log("=================================");
