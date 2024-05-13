@@ -23,7 +23,7 @@ async function runScript() {
         const cmdInfo = `gsutil du -s -ch gs://e3ds-master.appspot.com/${file}`;
         const { stdout: infostdout, stderr: infostderr } = await exec(cmdInfo, { maxBuffer: 1024 * 4000 });
         console.log("cmdDownload", infostdout, infostderr);
-        const cmdDownload = `gsutil -m cp -r ${gcsBucket}/${file} ./${dirName}/`;
+        const cmdDownload = `gsutil -m cp -r gs://"e3ds-master.appspot.com/${file}" ./${dirName}/`;
         const { stdout, stderr } = await exec(cmdDownload, { maxBuffer: 1024 * 4000 });
         console.log("cmdDownload", stdout, stderr);
         let cmdUpload = `aws s3 --endpoint=${s3Endpoint} cp ./${dirName}/${file} ${s3Bucket}/${file}`;
